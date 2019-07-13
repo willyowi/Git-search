@@ -1,0 +1,70 @@
+<form class="form-inline text-center #myForm='ngForm' myForm.reset()">
+  <div class="md-form my-4">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" [(ngModel)]='username' name='username' (keyup)='getProfile()'aria-label="Search">
+  </div>
+</form>
+<div>
+  <!-- Grid row -->
+    <div class="row ">
+      <!-- Grid column -->
+      <div class="col-lg-5 col-md-6 clearfix">
+        <!--Card-->
+        <div class="card float-left">
+          <!--Card content-->
+          <div class="card-body elegant-color white-text">
+            <!--Title-->
+            <h4 class="card-title">Title of the app</h4>
+            <!--Text-->
+            <p class="card-text white-text">
+              This is GSearch, a clone, somewhat, of the GitHub search. You can search for users (the current implemantation of the project) and details about them will be displayed for you. You are able to view their Login names, how popular they are (Followers Vs Following) and lastly how many Repositories they have (publicly). Finally, you can also check them out on their actual GitHub page!
+            </p>
+            <a href={{users?.html_url}} target='_blank' class="btn btn-outline-white btn-md waves-effect">Check On GitHub</a>
+          </div>
+
+        </div>
+        <!--/.Card-->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div *ngIf = 'users' class="col-lg-7 col-md-6">
+        <!--Panel-->
+        <div class="card">
+          <h3 class="card-header elegant-color lighten-1 white-text text-uppercase font-weight-bold text-center py-5">{{users.name}}</h3>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Login Name
+                <span class="badge stylish-color badge-pill">{{users?.login}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Followers
+                <span class="badge stylish-color badge-pill">{{users?.followers}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Following
+                <span class="badge stylish-color badge-pill">{{users?.following}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Public Repositories
+                <span class="badge stylish-color badge-pill">{{users?.public_repos}}</span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Public Gists
+                <span class="badge stylish-color badge-pill">{{users?.public_gists}}</span>
+              </li>
+            </ul>
+            <p class="text-small text-muted mb-0 pt-3">* At vero eos et accusamus et iusto ducimus.</p>
+          </div>
+        </div>
+        <!--/.Panel-->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+</div>
