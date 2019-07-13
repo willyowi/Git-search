@@ -1,6 +1,6 @@
 # Practice
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 This is a git search application that is mimics the GitHub search. A user can search for users and Repositories.
 
 ## Development server
@@ -60,7 +60,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # GSearch
 
 ## Support and contact details
-contact me @kenmucciz8@gmail.com
+contact me @wilsonowino1@gmail.com
 ### License
 The project is under [MIT license](https://github.com/mucciz/GSearch/blob/master/LICENSE)
 Copyright &copy; 2019.All rigths reserved
