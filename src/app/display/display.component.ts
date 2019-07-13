@@ -14,7 +14,7 @@ export class DisplayComponent implements OnInit {
   public username: string;
 
   constructor(private profileService: ProfileService) {
-    // console.log(this.users)
+    
   }
 
   getProfile() {
