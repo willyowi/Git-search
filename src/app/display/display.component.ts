@@ -25,6 +25,6 @@ export class DisplayComponent implements OnInit {
 
 
   ngOnInit() {
-    // this.profileService.getUsers()
+    
   }
 };
