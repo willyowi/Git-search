@@ -12,8 +12,7 @@ import { Repo } from './repo';
 export class ProfileService {
    public users: Users;
    public username: string;
-   // private clientId = '9b46687834a60196dd45';
-   // private clientSecret = '6f01539559dd7163c8029e706655007a472b1213';
+  
 
    constructor(private http: HttpClient) {
      this.users= new Users('','','',0,0,0,0);
